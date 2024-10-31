@@ -1,0 +1,64 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+/* Game container */
+.game-container {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+/* Board styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #333;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.cell.x { color: #ff5722; }
+.cell.o { color: #2196f3; }
+
+/* Button styling */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#gameStatus {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #f0f0f0;
+}
